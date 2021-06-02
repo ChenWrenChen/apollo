@@ -108,7 +108,7 @@ bool ReferenceLineInfo::Init(const std::vector<const Obstacle*>& obstacles) {
                                   FLAGS_speed_bump_speed_limit);
   }
 
-  SetCruiseSpeed(FLAGS_default_cruise_speed);
+  SetCruiseSpeed(8);
 
   // set lattice planning target speed limit;
   SetLatticeCruiseSpeed(FLAGS_default_cruise_speed);
