@@ -137,6 +137,11 @@ void ReferenceLineInfo::SetCandidatePathBoundaries(
   candidate_path_boundaries_ = std::move(path_boundaries);
 }
 
+//@zzq-20210601
+void ReferenceLineInfo::SetDefaultCruiseSpeed() {
+  cruise_speed_ = 10;
+}
+    
 double ReferenceLineInfo::GetCruiseSpeed() const {
   return cruise_speed_ > 0.0 ? cruise_speed_ : FLAGS_default_cruise_speed;
 }
